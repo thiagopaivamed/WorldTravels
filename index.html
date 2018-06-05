@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>World Travels</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/style.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/style.min.css" />
 </head>
 
 <body>
 
-  <div class="topo">
+  <section class="section topo">
     <nav class="navbar has-text-white is-spaced" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
@@ -52,9 +52,9 @@
       <h1 class="title has-text-white">Conheça um mundo de possibilidades</h1>
       <button class="button btn is-rounded">Saiba mais</button>
     </div>
-  </div>
+  </section>
 
-  <div class="hero is-dark ">
+  <section class="section hero is-dark ">
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="columns is-gapless">
@@ -74,9 +74,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="servicos has-text-centered" id="servicos">
+  <section class="servicos has-text-centered" id="servicos">
     <div class="container">
       <div class="titulo">
         <h1 class="title ">Nossos serviços</h1>
@@ -123,9 +123,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="has-background-light precos" id="precos">
+  <section class="has-background-light precos" id="precos">
     <div class="container">
       <div class="precos has-text-centered">
         <div class="titulo">
@@ -211,9 +211,9 @@
 
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="destinos has-background-grey-darker" id="destinos">
+  <section class="destinos has-background-grey-darker" id="destinos">
     <div class="titulo">
       <h1 class="title has-text-centered has-text-white-bis">Nossos Destinos</h1>
     </div>
@@ -403,50 +403,139 @@
       </div>
 
     </div>
-  </div>
+  </section>
 
-  <div class="divFormulario" id="contato">
+  <section class="section clientes has-background-light">
+    <div class="cointainer">
+      <h1 class="title has-text-centered ">O que nossos clientes dizem</h1>
+
+      <div class="depoimentos">
+        <div class="columns">
+          <div class="column">
+            <div class="box">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-128x128">
+                    <img src="https://images.pexels.com/photos/371160/pexels-photo-371160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                      alt="Image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Amanda</strong>
+                      <small>01/07/2017</small>
+                      <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla
+                      egestas. Nullam condimentum luctus turpis.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="box">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-128x128">
+                    <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                      alt="Image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Marina</strong>
+                      <small>05/06/2018</small>
+                      <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla
+                      egestas. Nullam condimentum luctus turpis.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="box">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-128x128">
+                    <img src="https://images.pexels.com/photos/355164/pexels-photo-355164.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                      alt="Image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Sabrina</strong>
+                      <small>09/02/2018</small>
+                      <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla
+                      egestas. Nullam condimentum luctus turpis.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section sectionFormulario" id="contato">
+
+    <div class="notificacao is-invisible">
+      <div class="container">
+        <div class="notification is-info">
+          <button class="delete" id="delete"></button>
+          <p>Assim que possível, entraremos em contato com você,
+            <strong id="pessoa"></strong> !
+          </p>
+        </div>
+      </div>
+    </div>
+    
     <div class="formulario">
 
       <h1 class="title">Entre em contato</h1>
 
-      <form>
-
-        <div class="field">
-          <label for="nome" class="label">Nome</label>
-          <div class="control">
-            <input type="text" id="nome" name="nome" class="input">
-          </div>
+      <div class="field">
+        <label for="nome" class="label">Nome</label>
+        <div class="control">
+          <input type="text" id="nome" name="nome" class="input">
         </div>
-
-        <div class="field">
-          <label for="email" class="label">Email</label>
-          <div class="control">
-            <input type="email" id="email" name="email" class="input">
-          </div>
-        </div>
-
-        <div class="field">
-          <label for="assunto" class="label">Assunto</label>
-          <div class="control">
-            <input type="text" id="assunto" name="assunto" class="input">
-          </div>
-        </div>
-
-        <div class="field">
-          <label for="mensagem" class="label">Mensagem</label>
-          <div class="control">
-            <textarea name="mensagem" id="mensagem" cols="15" rows="1" class="textarea"></textarea>
-          </div>
-        </div>
-
-        <div class="divbtn">
-        <button class="button is-warning is-outlined btn">Enviar</button>
       </div>
-      </form>
-    </div>
-  </div>
 
+      <div class="field">
+        <label for="email" class="label">Email</label>
+        <div class="control">
+          <input type="email" id="email" name="email" class="input">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="assunto" class="label">Assunto</label>
+        <div class="control">
+          <input type="text" id="assunto" name="assunto" class="input">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="mensagem" class="label">Mensagem</label>
+        <div class="control">
+          <textarea name="mensagem" id="mensagem" cols="15" rows="1" class="textarea"></textarea>
+        </div>
+      </div>
+
+      <div class="divbtn">
+        <button class="button is-warning is-outlined btn" id="btnEnviar">Enviar</button>
+      </div>
+
+    </div>
+  </section>
 
   <footer class="footer has-background-link">
     <div class="container">
@@ -460,7 +549,8 @@
       </div>
     </div>
   </footer>
-  
+
+
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <script src="js/app.min.js"></script>
 </body>
